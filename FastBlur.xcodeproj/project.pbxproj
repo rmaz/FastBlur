@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790AD2A019125ADD00870D01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD29F19125ADD00870D01 /* Foundation.framework */; };
+		790AD2A219125ADD00870D01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD2A119125ADD00870D01 /* CoreGraphics.framework */; };
+		790AD2A419125ADD00870D01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD2A319125ADD00870D01 /* UIKit.framework */; };
+		790AD2AA19125ADD00870D01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790AD2A819125ADD00870D01 /* InfoPlist.strings */; };
+		790AD2AC19125ADD00870D01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AD2AB19125ADD00870D01 /* main.m */; };
+		790AD2B019125ADD00870D01 /* BPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AD2AF19125ADD00870D01 /* BPAppDelegate.m */; };
+		790AD2B319125ADD00870D01 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790AD2B119125ADD00870D01 /* Main_iPhone.storyboard */; };
+		790AD2B619125ADD00870D01 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790AD2B419125ADD00870D01 /* Main_iPad.storyboard */; };
+		790AD2B919125ADD00870D01 /* BPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AD2B819125ADD00870D01 /* BPViewController.m */; };
+		790AD2BB19125ADD00870D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790AD2BA19125ADD00870D01 /* Images.xcassets */; };
+		790AD2C219125ADD00870D01 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD2C119125ADD00870D01 /* XCTest.framework */; };
+		790AD2C319125ADD00870D01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD29F19125ADD00870D01 /* Foundation.framework */; };
+		790AD2C419125ADD00870D01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD2A319125ADD00870D01 /* UIKit.framework */; };
+		790AD2CC19125ADD00870D01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790AD2CA19125ADD00870D01 /* InfoPlist.strings */; };
+		790AD2CE19125ADD00870D01 /* FastBlurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AD2CD19125ADD00870D01 /* FastBlurTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		790AD2C519125ADD00870D01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790AD29419125ADD00870D01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 790AD29B19125ADD00870D01;
+			remoteInfo = FastBlur;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		790AD29C19125ADD00870D01 /* FastBlur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastBlur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		790AD29F19125ADD00870D01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		790AD2A119125ADD00870D01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		790AD2A319125ADD00870D01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		790AD2A719125ADD00870D01 /* FastBlur-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastBlur-Info.plist"; sourceTree = "<group>"; };
+		790AD2A919125ADD00870D01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		790AD2AB19125ADD00870D01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		790AD2AD19125ADD00870D01 /* FastBlur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastBlur-Prefix.pch"; sourceTree = "<group>"; };
+		790AD2AE19125ADD00870D01 /* BPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPAppDelegate.h; sourceTree = "<group>"; };
+		790AD2AF19125ADD00870D01 /* BPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPAppDelegate.m; sourceTree = "<group>"; };
+		790AD2B219125ADD00870D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		790AD2B519125ADD00870D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		790AD2B719125ADD00870D01 /* BPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPViewController.h; sourceTree = "<group>"; };
+		790AD2B819125ADD00870D01 /* BPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPViewController.m; sourceTree = "<group>"; };
+		790AD2BA19125ADD00870D01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		790AD2C019125ADD00870D01 /* FastBlurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastBlurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		790AD2C119125ADD00870D01 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		790AD2C919125ADD00870D01 /* FastBlurTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastBlurTests-Info.plist"; sourceTree = "<group>"; };
+		790AD2CB19125ADD00870D01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		790AD2CD19125ADD00870D01 /* FastBlurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastBlurTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		790AD29919125ADD00870D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790AD2A219125ADD00870D01 /* CoreGraphics.framework in Frameworks */,
+				790AD2A419125ADD00870D01 /* UIKit.framework in Frameworks */,
+				790AD2A019125ADD00870D01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790AD2BD19125ADD00870D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790AD2C219125ADD00870D01 /* XCTest.framework in Frameworks */,
+				790AD2C419125ADD00870D01 /* UIKit.framework in Frameworks */,
+				790AD2C319125ADD00870D01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		790AD29319125ADD00870D01 = {
+			isa = PBXGroup;
+			children = (
+				790AD2A519125ADD00870D01 /* FastBlur */,
+				790AD2C719125ADD00870D01 /* FastBlurTests */,
+				790AD29E19125ADD00870D01 /* Frameworks */,
+				790AD29D19125ADD00870D01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		790AD29D19125ADD00870D01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				790AD29C19125ADD00870D01 /* FastBlur.app */,
+				790AD2C019125ADD00870D01 /* FastBlurTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		790AD29E19125ADD00870D01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				790AD29F19125ADD00870D01 /* Foundation.framework */,
+				790AD2A119125ADD00870D01 /* CoreGraphics.framework */,
+				790AD2A319125ADD00870D01 /* UIKit.framework */,
+				790AD2C119125ADD00870D01 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		790AD2A519125ADD00870D01 /* FastBlur */ = {
+			isa = PBXGroup;
+			children = (
+				790AD2AE19125ADD00870D01 /* BPAppDelegate.h */,
+				790AD2AF19125ADD00870D01 /* BPAppDelegate.m */,
+				790AD2B119125ADD00870D01 /* Main_iPhone.storyboard */,
+				790AD2B419125ADD00870D01 /* Main_iPad.storyboard */,
+				790AD2B719125ADD00870D01 /* BPViewController.h */,
+				790AD2B819125ADD00870D01 /* BPViewController.m */,
+				790AD2BA19125ADD00870D01 /* Images.xcassets */,
+				790AD2A619125ADD00870D01 /* Supporting Files */,
+			);
+			path = FastBlur;
+			sourceTree = "<group>";
+		};
+		790AD2A619125ADD00870D01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				790AD2A719125ADD00870D01 /* FastBlur-Info.plist */,
+				790AD2A819125ADD00870D01 /* InfoPlist.strings */,
+				790AD2AB19125ADD00870D01 /* main.m */,
+				790AD2AD19125ADD00870D01 /* FastBlur-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		790AD2C719125ADD00870D01 /* FastBlurTests */ = {
+			isa = PBXGroup;
+			children = (
+				790AD2CD19125ADD00870D01 /* FastBlurTests.m */,
+				790AD2C819125ADD00870D01 /* Supporting Files */,
+			);
+			path = FastBlurTests;
+			sourceTree = "<group>";
+		};
+		790AD2C819125ADD00870D01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				790AD2C919125ADD00870D01 /* FastBlurTests-Info.plist */,
+				790AD2CA19125ADD00870D01 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		790AD29B19125ADD00870D01 /* FastBlur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790AD2D119125ADD00870D01 /* Build configuration list for PBXNativeTarget "FastBlur" */;
+			buildPhases = (
+				790AD29819125ADD00870D01 /* Sources */,
+				790AD29919125ADD00870D01 /* Frameworks */,
+				790AD29A19125ADD00870D01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastBlur;
+			productName = FastBlur;
+			productReference = 790AD29C19125ADD00870D01 /* FastBlur.app */;
+			productType = "com.apple.product-type.application";
+		};
+		790AD2BF19125ADD00870D01 /* FastBlurTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790AD2D419125ADD00870D01 /* Build configuration list for PBXNativeTarget "FastBlurTests" */;
+			buildPhases = (
+				790AD2BC19125ADD00870D01 /* Sources */,
+				790AD2BD19125ADD00870D01 /* Frameworks */,
+				790AD2BE19125ADD00870D01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790AD2C619125ADD00870D01 /* PBXTargetDependency */,
+			);
+			name = FastBlurTests;
+			productName = FastBlurTests;
+			productReference = 790AD2C019125ADD00870D01 /* FastBlurTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		790AD29419125ADD00870D01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Big Dot";
+				TargetAttributes = {
+					790AD2BF19125ADD00870D01 = {
+						TestTargetID = 790AD29B19125ADD00870D01;
+					};
+				};
+			};
+			buildConfigurationList = 790AD29719125ADD00870D01 /* Build configuration list for PBXProject "FastBlur" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 790AD29319125ADD00870D01;
+			productRefGroup = 790AD29D19125ADD00870D01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				790AD29B19125ADD00870D01 /* FastBlur */,
+				790AD2BF19125ADD00870D01 /* FastBlurTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		790AD29A19125ADD00870D01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790AD2B619125ADD00870D01 /* Main_iPad.storyboard in Resources */,
+				790AD2BB19125ADD00870D01 /* Images.xcassets in Resources */,
+				790AD2B319125ADD00870D01 /* Main_iPhone.storyboard in Resources */,
+				790AD2AA19125ADD00870D01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790AD2BE19125ADD00870D01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790AD2CC19125ADD00870D01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		790AD29819125ADD00870D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790AD2B919125ADD00870D01 /* BPViewController.m in Sources */,
+				790AD2B019125ADD00870D01 /* BPAppDelegate.m in Sources */,
+				790AD2AC19125ADD00870D01 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790AD2BC19125ADD00870D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790AD2CE19125ADD00870D01 /* FastBlurTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		790AD2C619125ADD00870D01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 790AD29B19125ADD00870D01 /* FastBlur */;
+			targetProxy = 790AD2C519125ADD00870D01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		790AD2A819125ADD00870D01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790AD2A919125ADD00870D01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		790AD2B119125ADD00870D01 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790AD2B219125ADD00870D01 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		790AD2B419125ADD00870D01 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790AD2B519125ADD00870D01 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		790AD2CA19125ADD00870D01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790AD2CB19125ADD00870D01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		790AD2CF19125ADD00870D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		790AD2D019125ADD00870D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		790AD2D219125ADD00870D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastBlur/FastBlur-Prefix.pch";
+				INFOPLIST_FILE = "FastBlur/FastBlur-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		790AD2D319125ADD00870D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastBlur/FastBlur-Prefix.pch";
+				INFOPLIST_FILE = "FastBlur/FastBlur-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		790AD2D519125ADD00870D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FastBlur.app/FastBlur";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastBlur/FastBlur-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FastBlurTests/FastBlurTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		790AD2D619125ADD00870D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FastBlur.app/FastBlur";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastBlur/FastBlur-Prefix.pch";
+				INFOPLIST_FILE = "FastBlurTests/FastBlurTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		790AD29719125ADD00870D01 /* Build configuration list for PBXProject "FastBlur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790AD2CF19125ADD00870D01 /* Debug */,
+				790AD2D019125ADD00870D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790AD2D119125ADD00870D01 /* Build configuration list for PBXNativeTarget "FastBlur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790AD2D219125ADD00870D01 /* Debug */,
+				790AD2D319125ADD00870D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		790AD2D419125ADD00870D01 /* Build configuration list for PBXNativeTarget "FastBlurTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790AD2D519125ADD00870D01 /* Debug */,
+				790AD2D619125ADD00870D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 790AD29419125ADD00870D01 /* Project object */;
+}
