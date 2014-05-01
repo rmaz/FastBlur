@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BPViewController" sceneMemberID="viewController">
@@ -15,8 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-98-cjf">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="512"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.36695264830000002" blue="0.65666778729999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="512" id="jNs-ef-tIV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-yv-W6b">
+                                <rect key="frame" x="0.0" y="512" width="768" height="512"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.36695264830000002" blue="0.65666778729999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sua-98-cjf" secondAttribute="trailing" id="M10-vs-q1W"/>
+                            <constraint firstAttribute="trailing" secondItem="kfx-yv-W6b" secondAttribute="trailing" id="SeL-ig-RwW"/>
+                            <constraint firstItem="kfx-yv-W6b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TlU-8K-MaN"/>
+                            <constraint firstItem="Sua-98-cjf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iUv-cd-EHx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kfx-yv-W6b" secondAttribute="bottom" id="lyR-VE-Oyo"/>
+                            <constraint firstItem="kfx-yv-W6b" firstAttribute="top" secondItem="Sua-98-cjf" secondAttribute="bottom" id="qyD-7i-DRC"/>
+                            <constraint firstItem="Sua-98-cjf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wfK-FV-jh2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomImageView" destination="kfx-yv-W6b" id="v7F-EU-jUB"/>
+                        <outlet property="topImageView" destination="Sua-98-cjf" id="yYL-37-Os3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

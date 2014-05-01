@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="BPViewController" sceneMemberID="viewController">
@@ -15,8 +15,38 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fg3-Yf-4gQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.36695264830000002" blue="0.65666778729999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="ThE-WV-N9i"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0xU-Zg-lLp">
+                                <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.36695264830000002" blue="0.65666778729999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="XtS-Xg-a0i"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0xU-Zg-lLp" secondAttribute="trailing" id="6Nl-5n-WaR"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0xU-Zg-lLp" secondAttribute="bottom" id="BxR-gP-Gmp"/>
+                            <constraint firstItem="0xU-Zg-lLp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="CWC-G0-3C4"/>
+                            <constraint firstAttribute="trailing" secondItem="Fg3-Yf-4gQ" secondAttribute="trailing" id="bxg-oG-0K3"/>
+                            <constraint firstItem="Fg3-Yf-4gQ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="eM8-1L-Ht3"/>
+                            <constraint firstItem="Fg3-Yf-4gQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="oG1-PC-8HY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomImageView" destination="0xU-Zg-lLp" id="ToN-VI-sxy"/>
+                        <outlet property="topImageView" destination="Fg3-Yf-4gQ" id="6kr-cF-kmR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

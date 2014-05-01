@@ -22,6 +22,8 @@
 		790AD2C419125ADD00870D01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD2A319125ADD00870D01 /* UIKit.framework */; };
 		790AD2CC19125ADD00870D01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790AD2CA19125ADD00870D01 /* InfoPlist.strings */; };
 		790AD2CE19125ADD00870D01 /* FastBlurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AD2CD19125ADD00870D01 /* FastBlurTests.m */; };
+		790AD2D919125C3E00870D01 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AD2D819125C3E00870D01 /* UIImage+ImageEffects.m */; };
+		790AD2DC19125C5700870D01 /* UIImage+blurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 790AD2DB19125C5700870D01 /* UIImage+blurredImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		790AD2C919125ADD00870D01 /* FastBlurTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastBlurTests-Info.plist"; sourceTree = "<group>"; };
 		790AD2CB19125ADD00870D01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		790AD2CD19125ADD00870D01 /* FastBlurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastBlurTests.m; sourceTree = "<group>"; };
+		790AD2D719125C3E00870D01 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		790AD2D819125C3E00870D01 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		790AD2DA19125C5700870D01 /* UIImage+blurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+blurredImage.h"; sourceTree = "<group>"; };
+		790AD2DB19125C5700870D01 /* UIImage+blurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+blurredImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 		790AD2A519125ADD00870D01 /* FastBlur */ = {
 			isa = PBXGroup;
 			children = (
+				790AD2DA19125C5700870D01 /* UIImage+blurredImage.h */,
+				790AD2DB19125C5700870D01 /* UIImage+blurredImage.m */,
+				790AD2D719125C3E00870D01 /* UIImage+ImageEffects.h */,
+				790AD2D819125C3E00870D01 /* UIImage+ImageEffects.m */,
 				790AD2AE19125ADD00870D01 /* BPAppDelegate.h */,
 				790AD2AF19125ADD00870D01 /* BPAppDelegate.m */,
 				790AD2B119125ADD00870D01 /* Main_iPhone.storyboard */,
@@ -203,6 +213,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Big Dot";
 				TargetAttributes = {
+					790AD29B19125ADD00870D01 = {
+						DevelopmentTeam = Q443VA859C;
+					};
 					790AD2BF19125ADD00870D01 = {
 						TestTargetID = 790AD29B19125ADD00870D01;
 					};
@@ -254,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790AD2D919125C3E00870D01 /* UIImage+ImageEffects.m in Sources */,
 				790AD2B919125ADD00870D01 /* BPViewController.m in Sources */,
 				790AD2B019125ADD00870D01 /* BPAppDelegate.m in Sources */,
+				790AD2DC19125C5700870D01 /* UIImage+blurredImage.m in Sources */,
 				790AD2AC19125ADD00870D01 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,10 +406,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FastBlur/FastBlur-Prefix.pch";
 				INFOPLIST_FILE = "FastBlur/FastBlur-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +422,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FastBlur/FastBlur-Prefix.pch";
 				INFOPLIST_FILE = "FastBlur/FastBlur-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
